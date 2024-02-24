@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -520,11 +520,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
-.bg-red-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
-}
-
 .text-2xl {
   font-size: 1.5rem;
 }
@@ -541,9 +536,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25;
 }
 
-.text-gray-700 {
+.text-magenta {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(219 0 255 / var(--tw-text-opacity));
 }
 
 .has-primary-text-color {
@@ -664,7 +659,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .wp-caption-text {
   font-size: .;
-  color: #4b5563;
+  color: #718096;
 }
 
 .entry-content, .block-editor-block-list__layout {
@@ -680,7 +675,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   p, ul, ol {
     a {
       --tw-text-opacity: 1;
-      color: rgb(59 130 246 / var(--tw-text-opacity));
+      color: rgb(219 0 255 / var(--tw-text-opacity));
     }
     a {
       -webkit-text-decoration-line: underline;

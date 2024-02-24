@@ -13,7 +13,7 @@
 
     p, ul, ol {
         a {
-            @apply text-blue-500 underline;
+            @apply text-magenta underline;
 
             &:hover {
                 @apply no-underline;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in page.php (displays content for index template)
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title text-magenta text-2xl">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php tailwind_post_thumbnail(); ?>

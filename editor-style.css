@@ -1,20 +1,20 @@
 .container {
   width: 100%;
   padding-right: 1rem;
-  padding-left: 1rem
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
     padding-right: 2rem;
-    padding-left: 2rem
+    padding-left: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px
+    max-width: 768px;
   }
 }
 
@@ -22,91 +22,91 @@
   .container {
     max-width: 1024px;
     padding-right: 0rem;
-    padding-left: 0rem
+    padding-left: 0rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1280px
+    max-width: 1280px;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px
+    max-width: 1536px;
   }
 }
 
 .visible {
-  visibility: visible
+  visibility: visible;
 }
 
 .mb-4 {
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
 }
 
 .text-2xl {
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 .text-sm {
-  font-size: .875rem
+  font-size: .875rem;
 }
 
 .font-extrabold {
-  font-weight: 800
+  font-weight: 800;
 }
 
 .leading-tight {
-  line-height: 1.25
+  line-height: 1.25;
 }
 
-.text-gray-700 {
+.text-magenta {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity))
+  color: rgb(219 0 255 / var(--tw-text-opacity));
 }
 
 .has-primary-text-color {
-  color: #0EA5E9
+  color: #0EA5E9;
 }
 
 .has-secondary-text-color {
-  color: #14B8A6
+  color: #14B8A6;
 }
 
 .has-dark-text-color {
-  color: #1F2937
+  color: #1F2937;
 }
 
 .has-light-text-color {
-  color: #F9FAFB
+  color: #F9FAFB;
 }
 
 .has-primary-background-color {
-  background-color: #0EA5E9
+  background-color: #0EA5E9;
 }
 
 .has-secondary-background-color {
-  background-color: #14B8A6
+  background-color: #14B8A6;
 }
 
 .has-dark-background-color {
-  background-color: #1F2937
+  background-color: #1F2937;
 }
 
 .has-light-background-color {
-  background-color: #F9FAFB
+  background-color: #F9FAFB;
 }
 
 .alignfull {
   margin: 0.5rem calc(50% - 50vw);
   max-width: 100vw;
-  width: 100vw
+  width: 100vw;
 }
 
 .alignwide {
@@ -114,149 +114,165 @@
   margin-right: -4rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  max-width: 1280px
+  max-width: 1280px;
 }
 
 .alignnone {
   margin-left: 0px;
   margin-right: 0px;
   height: auto;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .aligncenter {
   margin: 0.5rem auto;
-  display: block
+  display: block;
 }
 
 @media (min-width: 640px) {
   .alignleft:not(.wp-block-button) {
-    margin-right: 0.5rem
+    margin-right: 0.5rem;
   }
 
   .alignleft:not(.wp-block-button) {
-    float: left
+    float: left;
   }
 
   .alignright:not(.wp-block-button) {
-    margin-left: 0.5rem
+    margin-left: 0.5rem;
   }
 
   .alignright:not(.wp-block-button) {
-    float: right
+    float: right;
   }
 
   .wp-block-button.alignleft a {
-    float: left
+    float: left;
   }
 
   .wp-block-button.alignleft a {
-    margin-right: 1rem
+    margin-right: 1rem;
   }
 
   .wp-block-button.alignright a {
-    float: right
+    float: right;
   }
 
   .wp-block-button.alignright a {
-    margin-left: 1rem
+    margin-left: 1rem;
   }
 }
 
 .has-small-font-size {
   font-size: 14px;
-  font-weight: normal
+  font-weight: normal;
 }
 
 .has-regular-font-size {
   font-size: 16px;
-  font-weight: normal
+  font-weight: normal;
 }
 
 .has-large-font-size {
   font-size: 18px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .wp-caption {
-  display: inline-block
+  display: inline-block;
 }
 
 .wp-caption img {
   margin-bottom: 0.5rem;
-  line-height: 1
+  line-height: 1;
 }
 
 .wp-caption-text {
   font-size: .;
-  color: #4b5563
+  color: #718096;
 }
 
 .entry-content, .block-editor-block-list__layout {
   h1 {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.25rem
+    font-size: 1.25rem;
   }
   h3 {
-    font-size: 1.125rem
+    font-size: 1.125rem;
   }
   p, ul, ol {
     a {
       --tw-text-opacity: 1;
-      color: rgb(59 130 246 / var(--tw-text-opacity))
+      color: rgb(219 0 255 / var(--tw-text-opacity));
     }
     a {
       -webkit-text-decoration-line: underline;
-              text-decoration-line: underline
+              text-decoration-line: underline;
     }
     a {
       &:hover {
         -webkit-text-decoration-line: none;
-                text-decoration-line: none
+                text-decoration-line: none;
       }
     }
   }
   p, ul, ol {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
   }
   ul {
     li {
-      list-style-position: inside
+      list-style-position: inside;
     }
     li {
-      list-style-type: disc
+      list-style-type: disc;
     }
   }
   ol {
     li {
-      list-style-position: inside
+      list-style-position: inside;
     }
     li {
-      list-style-type: decimal
+      list-style-type: decimal;
     }
   }
 }
 
 .block-editor__typewriter {
-  font-family: SF Compact, ui-sans-serif
+  font-family: SF Compact, ui-sans-serif;
 }
 
 .wp-block {
-  max-width: 1024px
+  max-width: 1024px;
 }
 
 .wp-block[data-align=wide] {
-  max-width: 1280px
+  max-width: 1280px;
 }
 
 .wp-block[data-align=full] {
-  max-width: 100%
+  max-width: 100%;
+}
+
+.block-editor-iframe__body {
+  padding: 10rem;
+}
+
+.edit-post-visual-editor__content-area {
+  background-color: magenta !important;
+}
+
+body.block-editor-iframe__body.editor-styles-wrapper.post-type-page.admin-color-fresh.wp-embed-responsive {
+  background: magenta;
+}
+
+body.js.block-editor-page {
+  background: red !important;
 }
 
 @media (min-width: 1024px) {
   .lg\:text-5xl {
-    font-size: 3rem
+    font-size: 3rem;
   }
 }

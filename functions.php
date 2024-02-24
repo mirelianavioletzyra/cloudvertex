@@ -21,6 +21,7 @@ if ( ! function_exists( 'tailwind_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function tailwind_setup() {
+		
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -103,6 +104,16 @@ if ( ! function_exists( 'tailwind_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'tailwind_setup' );
+
+// Enqueu Editor Styles
+function my_custom_admin_styles() {
+    global $pagenow;
+    if ( 'post.php' == $pagenow || 'post-new.php' == $pagenow ) {
+        wp_enqueue_style( 'my-custom-style', get_template_directory_uri() . '/editor-style.css' );
+    }
+}
+add_action( 'admin_enqueue_scripts', 'my_custom_admin_styles' );
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

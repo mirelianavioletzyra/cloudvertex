@@ -48,6 +48,9 @@ module.exports = {
             '9xl': '7rem',
             'xxl': 'clamp(7rem, -0.875rem + 13vw, 14rem)'
         },
+        colors: {
+        'magenta': '#DB00FF',
+        },
     },
     plugins: [
         plugin(function ({addUtilities, addComponents, e, prefix, config, theme}) {
