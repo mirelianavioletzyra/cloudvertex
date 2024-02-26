@@ -222,13 +222,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
+// Enqueue Tailwind classes for blocks
 function my_custom_block_editor_scripts() {
     wp_enqueue_script(
         'my-custom-blocks',
-        get_stylesheet_directory_uri() . '/block-templates/native-blocks/media-text.js', // Adjust the path to your JavaScript file
+        get_stylesheet_directory_uri() . '/block-templates/block-classes.js', // Adjust the path to your JavaScript file
         array( 'wp-blocks', 'wp-dom' ),
-        filemtime(get_stylesheet_directory() . '/block-templates/native-blocks/media-text.js'),
+        filemtime(get_stylesheet_directory() . '/block-templates/block-classes.js'),
         true
     );
 }

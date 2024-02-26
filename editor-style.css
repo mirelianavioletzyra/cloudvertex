@@ -50,6 +50,11 @@
   margin-bottom: 0.25rem;
 }
 
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 .bg-fuchsia-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(217 70 239 / var(--tw-bg-opacity));
@@ -69,6 +74,16 @@
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
 .text-magenta {

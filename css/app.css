@@ -509,56 +509,71 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .visible {
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .mb-4 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem !important;
 }
 
 .bg-zinc-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-fuchsia-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(217 70 239 / var(--tw-bg-opacity)) !important;
 }
 
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 .text-sm {
-  font-size: .875rem;
+  font-size: .875rem !important;
 }
 
 .font-extrabold {
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 
 .leading-tight {
-  line-height: 1.25;
+  line-height: 1.25 !important;
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
 }
 
 .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-zinc-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(82 82 91 / var(--tw-text-opacity)) !important;
 }
 
 .text-magenta {
-  --tw-text-opacity: 1;
-  color: rgb(219 0 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(219 0 255 / var(--tw-text-opacity)) !important;
 }
 
 .text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
 }
 
 .has-primary-text-color {
@@ -812,10 +827,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .wp-block-media-text {
   padding: 6rem 0;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
   .lg\:text-5xl {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 }

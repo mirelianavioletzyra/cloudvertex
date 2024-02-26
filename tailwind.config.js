@@ -9,6 +9,10 @@ module.exports = {
         './*/*.php',
         './safelist.txt'
     ],
+    safelist: [
+        'text-gray-900'
+    ],
+    important: true,
     theme: {
         container: {
             padding: {

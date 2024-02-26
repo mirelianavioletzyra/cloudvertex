@@ -17,4 +17,4 @@ alignright
 wp-block-button
 wp-caption
 wp-caption-text
-text-gray-950
+text-gray-800
