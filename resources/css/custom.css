@@ -1,4 +1,5 @@
-.entry-content, .block-editor-block-list__layout {
+.entry-content,
+.block-editor-block-list__layout {
     h1 {
         @apply text-2xl;
     }
@@ -11,7 +12,9 @@
         @apply text-lg;
     }
 
-    p, ul, ol {
+    p,
+    ul,
+    ol {
         a {
             @apply text-magenta underline;
 
@@ -34,4 +37,10 @@
             @apply list-decimal list-inside;
         }
     }
+}
+
+/* Primary Layout */
+
+.entry-content {
+    margin: 0;
 }

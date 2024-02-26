@@ -3,29 +3,21 @@
 }
 
 .wp-block{
-    @apply max-w-screen-lg;
+    @apply px-14;
+}
+
+.wp-block-media-text {
+    @apply py-14;
 }
 
 .wp-block[data-align=wide] {
-    @apply max-w-screen-xl;
+    /* @apply max-w-screen-xl; */
 }
 
 .wp-block[data-align=full] {
-    @apply max-w-full;
+    /* @apply max-w-full; */
 }
 
 .block-editor-iframe__body {
-    @apply p-40;
-}
-
-.edit-post-visual-editor__content-area {
-background-color: magenta !important;
-}
-
-body.block-editor-iframe__body.editor-styles-wrapper.post-type-page.admin-color-fresh.wp-embed-responsive {
-    background: magenta;
-}
-
-body.js.block-editor-page {
-    background: red !important;
+    /* @apply p-40; */
 }

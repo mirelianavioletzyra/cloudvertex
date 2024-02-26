@@ -222,3 +222,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function my_custom_block_editor_scripts() {
+    wp_enqueue_script(
+        'my-custom-blocks',
+        get_stylesheet_directory_uri() . '/block-templates/native-blocks/media-text.js', // Adjust the path to your JavaScript file
+        array( 'wp-blocks', 'wp-dom' ),
+        filemtime(get_stylesheet_directory() . '/block-templates/native-blocks/media-text.js'),
+        true
+    );
+}
+add_action('enqueue_block_editor_assets', 'my_custom_block_editor_scripts');

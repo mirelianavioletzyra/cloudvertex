@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -520,6 +520,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-fuchsia-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+}
+
 .text-2xl {
   font-size: 1.5rem;
 }
@@ -536,9 +546,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-magenta {
   --tw-text-opacity: 1;
   color: rgb(219 0 255 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .has-primary-text-color {
@@ -659,10 +679,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .wp-caption-text {
   font-size: .;
-  color: #718096;
+  color: #4b5563;
 }
 
-.entry-content, .block-editor-block-list__layout {
+.entry-content,
+.block-editor-block-list__layout {
   h1 {
     font-size: 1.5rem;
   }
@@ -672,7 +693,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   h3 {
     font-size: 1.125rem;
   }
-  p, ul, ol {
+  p,
+    ul,
+    ol {
     a {
       --tw-text-opacity: 1;
       color: rgb(219 0 255 / var(--tw-text-opacity));
@@ -707,6 +730,88 @@ Ensure the default browser behavior of the `hidden` attribute.
       list-style-type: decimal;
     }
   }
+}
+
+/* Primary Layout */
+
+.entry-content {
+  margin: 0;
+}
+
+/* No WP Editor Bar */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.admin-bar .site-header {
+  top: 32px;
+}
+
+/* Header Grid */
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* Creates 12 columns with equal width */
+  grid-template-rows: auto;
+  /* Adjusts the row height to the content */
+  grid-column-gap: 10px;
+  /* Optional: Adjusts the space between columns */
+  /* Naming the columns for easier reference */
+  grid-template-areas:
+        "col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col12";
+}
+
+.site-branding {
+  grid-column: 3 / span 4;
+  /* Starts at column 3, spans 4 columns */
+}
+
+.main-navigation {
+  grid-column: 7 / span 4;
+  /* Starts at column 7, spans 4 columns */
+}
+
+/* Blocks */
+
+.entry-content 
+
+.entry-content {
+  .wp-block-media-text.has-media-on-the-right {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 12 equal columns */
+    grid-template-rows: auto;
+    /* Row height adjusts to content */
+    grid-column-gap: 10px;
+    /* Optional: gap between columns */
+  }
+  .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+    grid-column: 3 / span 4;
+    /* Start at column 3, span 4 columns */
+  }
+  .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
+    grid-column: 7 / span 4;
+    /* start at column 7, span 4 columns */
+  }
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 equal columns */
+  grid-template-rows: auto;
+  /* Row height adjusts to content */
+  grid-column-gap: 10px;
+  /* Optional: gap between columns */
+}
+
+.wp-block-media-text {
+  padding: 6rem 0;
 }
 
 @media (min-width: 1024px) {
