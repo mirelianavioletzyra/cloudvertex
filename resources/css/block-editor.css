@@ -3,11 +3,11 @@
 }
 
 .wp-block{
-    @apply px-14;
+    /* @apply px-14; */
 }
 
 .wp-block-media-text {
-    @apply py-14;
+    /* @apply py-14; */
 }
 
 .wp-block[data-align=wide] {
