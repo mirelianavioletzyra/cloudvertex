@@ -39,7 +39,7 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'tailwind'); ?></a>
 
-		<header id="masthead" class="site-header bg-fuchsia-500 text-zinc-600">
+		<header id="masthead" class="site-header bg-fuchsia-300/20 backdrop-blur text-zinc-600">
 			<div class="header-grid">
 				<div class="site-branding">
 					<?php

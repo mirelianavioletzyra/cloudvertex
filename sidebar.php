@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The sidebar containing the main widget area
  *
@@ -7,11 +8,13 @@
  * @package tailwind
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if (!is_active_sidebar('sidebar-1')) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside id="secondary" class="widget-area grid grid-cols-12">
+	<div class="col-span-8 col-start-3">
+		<?php dynamic_sidebar('sidebar-1'); ?>
+	</div>
 </aside><!-- #secondary -->

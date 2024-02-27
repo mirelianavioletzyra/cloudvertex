@@ -18,3 +18,15 @@ wp-block-button
 wp-caption
 wp-caption-text
 text-gray-800
+text-lg
+text-xl
+text-2xl
+text-3xl
+text-4xl
+text-5xl
+font-light
+text-fuchsia-700
+text-fuchsia-900
+text-pink-50 
+bg-fuchsia-600
+bg-[#db00ff]

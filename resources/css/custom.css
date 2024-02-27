@@ -44,3 +44,26 @@
 .entry-content {
     margin: 0;
 }
+
+/* Links */
+
+a {
+    @apply text-magenta;
+
+    &:visited {
+        @apply text-magenta;
+    }
+
+    &:hover {
+        @apply text-purple-500;
+    }
+}
+
+/* WP Forms */
+
+div.wpforms-container-full button[type=submit] {
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    font-size: 18px;
+    line-height: 1.5;
+    height: auto;
+}

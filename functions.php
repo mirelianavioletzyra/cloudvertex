@@ -226,10 +226,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function my_custom_block_editor_scripts() {
     wp_enqueue_script(
         'my-custom-blocks',
-        get_stylesheet_directory_uri() . '/block-templates/block-classes.js', // Adjust the path to your JavaScript file
+        get_stylesheet_directory_uri() . '/block-templates/block-classes.js',
         array( 'wp-blocks', 'wp-dom' ),
         filemtime(get_stylesheet_directory() . '/block-templates/block-classes.js'),
         true
     );
 }
 add_action('enqueue_block_editor_assets', 'my_custom_block_editor_scripts');
+
+// custom classes for body tag
+function add_custom_class_to_body($classes) {
+    $classes[] = 'm-0';
+    return $classes;
+}
+add_filter('body_class', 'add_custom_class_to_body');

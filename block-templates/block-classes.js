@@ -10,13 +10,13 @@
                     customClassName = 'text-gray-800'; // Custom class for paragraphs
                     break;
                 case 'core/media-text':
-                    customClassName = 'custom-media-text-class'; // Custom class for media text
+                    customClassName = 'px-0 py-8'; // Custom class for media text
                     break;
                 case 'core/heading':
                     // Apply different classes based on heading level
                     switch (attributes.level) {
                         case 1:
-                            customClassName = 'custom-h1-class';
+                            customClassName = 'text-3xl';
                             break;
                         case 2:
                             customClassName = 'custom-h2-class';
