@@ -33,6 +33,10 @@
         grid-column-gap: 10px;
     }
 
+    .wp-block-group .wpforms-container {
+        display: inline-block;
+    }
+
     .wp-block-media-text.is-stacked-on-mobile {
         grid-template-columns: repeat(12, 1fr) !important;
     }

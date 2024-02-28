@@ -40,7 +40,9 @@
 }
 
 /* Primary Layout */
-
+body .is-layout-flex {
+    justify-content: center;
+}
 .entry-content {
     margin: 0;
 }
@@ -66,4 +68,8 @@ div.wpforms-container-full button[type=submit] {
     font-size: 18px;
     line-height: 1.5;
     height: auto;
+}
+
+.wp-block-group div.wpforms-container-full {
+    margin: 0;
 }
