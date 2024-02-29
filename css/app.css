@@ -832,6 +832,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* Primary Layout */
 
+body .is-layout-flex {
+  justify-content: center;
+}
+
 .entry-content {
   margin: 0;
 }
@@ -858,6 +862,10 @@ div.wpforms-container-full button[type=submit] {
   font-size: 18px;
   line-height: 1.5;
   height: auto;
+}
+
+.wp-block-group div.wpforms-container-full {
+  margin: 0;
 }
 
 /* No WP Editor Bar */
@@ -906,6 +914,9 @@ div.wpforms-container-full button[type=submit] {
     grid-template-columns: repeat(12, 1fr) !important;
     grid-template-rows: auto;
     grid-column-gap: 10px;
+  }
+  .wp-block-group .wpforms-container {
+    display: inline-block;
   }
   .wp-block-media-text.is-stacked-on-mobile {
     grid-template-columns: repeat(12, 1fr) !important;
