@@ -10,7 +10,7 @@ module.exports = {
         './safelist.txt'
     ],
     safelist: [
-        'text-gray-900'
+        'text-gray-900',
     ],
     important: true,
     theme: {
