@@ -875,10 +875,12 @@ div.wpforms-container-full button[type=submit] {
   top: 0;
   width: 100%;
   padding: 1rem 0;
+  z-index: 100;
 }
 
 .admin-bar .site-header {
   top: 32px;
+  z-index: 100;
 }
 
 /* Header Grid */
