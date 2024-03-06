@@ -25,6 +25,8 @@
 
 /* Blocks */
 .entry-content {
+    display: grid;
+
     .wp-block-media-text,
     .wpforms-container {
         display: grid;
@@ -33,29 +35,35 @@
         grid-column-gap: 10px;
     }
 
-    .wp-block-group .wpforms-container {
-        display: inline-block;
+    .wp-block-group {
+        padding: 0 8%;
     }
 
     .wp-block-media-text.is-stacked-on-mobile {
-        grid-template-columns: repeat(12, 1fr) !important;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+    }
+
+    .wp-block-group .wpforms-container {
+        display: inline-block;
     }
     
     *:first-child,
     *:not(:first-child) {
-        grid-column: 3 / span 4 !important;
+        grid-column: 1 / span 1 !important;
     }
-
+ 
     *:nth-child(2) {
-        grid-column: 7 / span 4 !important;
+        grid-column: 1 / span 1 !important;
     }
 
     figure:first-child {
-        grid-column: 3 / span 4 !important;
+        grid-column: 1 / span 1 !important;
     }
 
     figure:last-child {
-        grid-column: 7 / span 4 !important;
+        grid-column: 1 / span 1 !important;
     }
 
     .wpforms-container {
@@ -75,6 +83,32 @@
     .wpforms-container .wpforms-field-row-block {
         width: 100%;
         max-width: 100% !important;
+    }
+}
+
+/* Larger than mobile */
+@media screen and (min-width: 600px) { 
+    .entry-content { 
+        .wp-block-media-text.is-stacked-on-mobile {
+        grid-template-columns: repeat(12, 1fr) !important;
+        }
+
+        *:first-child,
+        *:not(:first-child) {
+            grid-column: 3 / span 4 !important;
+        }
+    
+        *:nth-child(2) {
+            grid-column: 7 / span 4 !important;
+        }
+
+        figure:first-child {
+            grid-column: 3 / span 4 !important;
+        }
+
+        figure:last-child {
+            grid-column: 7 / span 4 !important;
+        }
     }
 }
 
