@@ -164,8 +164,8 @@
     padding: 0;
 }
 
-.wp-block-column>* {
-    width: 440px;
+.wp-block-columns>.wp-block-column>div {
+    width: fit-content;
     padding: 0 8%;
     display: block !important;
 }
