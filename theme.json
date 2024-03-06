@@ -2,7 +2,99 @@
 	"version": 1,
 	"settings": {
 		"typography": {
-			"fontFamilies": []
+			"fontFamilies": [
+				{
+					"fontFamily": "Rubik",
+					"slug": "rubik",
+					"fontFace": [
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-300-normal5.woff2"
+							]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-400-normal5.woff2"
+							]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-600-normal5.woff2"
+							]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-700-normal5.woff2"
+							]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-800-normal5.woff2"
+							]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal0.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal1.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal2.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal3.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal4.woff2",
+								"http://cloudvertex.local/wp-content/bcf-fonts/Rubik/rubik-900-normal5.woff2"
+							]
+						}
+					],
+					"isBcf": true
+				}
+			]
 		}
 	},
 	"styles": [],

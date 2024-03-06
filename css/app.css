@@ -815,6 +815,9 @@ body {
   h1 {
     font-size: 1.5rem;
   }
+  h1 {
+    font-weight: 500;
+  }
   h2 {
     font-size: 1.25rem;
   }
