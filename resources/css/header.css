@@ -3,11 +3,30 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem 0;
     z-index: 100;
+
+    @apply py-2 md:py-4;
 }
 
+.site-branding {
+    display: grid;
+    align-items: center;
+}
+
+
 .admin-bar .site-header {
-    top: 32px;
+    top: 46px;
     z-index: 100;
+} 
+
+.mega-menu-menu-1-mobile-open {
+    .site-branding {
+        grid-row: 1 / span 1;
+        align-items: start;
+        padding-top: 0.4rem;
+    }
+    .main-navigation {
+        grid-column: 3 / span 8;
+        grid-row: 1 / span 1;
+    }
 }
