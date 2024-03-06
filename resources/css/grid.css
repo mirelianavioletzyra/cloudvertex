@@ -48,12 +48,12 @@
     .wp-block-group .wpforms-container {
         display: inline-block;
     }
-    
+
     *:first-child,
     *:not(:first-child) {
         grid-column: 1 / span 1 !important;
     }
- 
+
     *:nth-child(2) {
         grid-column: 1 / span 1 !important;
     }
@@ -73,7 +73,7 @@
         grid-column-gap: 10px;
     }
 
-    .wpforms-container > *:first-child {
+    .wpforms-container>*:first-child {
         grid-column: 3 / span 8 !important;
     }
 
@@ -87,18 +87,19 @@
 }
 
 /* Larger than mobile */
-@media screen and (min-width: 600px) { 
-    .entry-content { 
+@media screen and (min-width: 600px) {
+    .entry-content {
+
         .wp-block-media-text.is-stacked-on-mobile,
         .wp-container-core-columns-layout-1 {
-        grid-template-columns: repeat(12, 1fr) !important;
+            grid-template-columns: repeat(12, 1fr) !important;
         }
 
-        .wp-block-column > * {
+        .wp-block-column>* {
             width: 580px;
             padding: 0 8%;
             display: block !important;
-        }        
+        }
 
         style[id] {
             display: none !important;
@@ -108,7 +109,7 @@
         *:not(:first-child) {
             grid-column: 3 / span 4 !important;
         }
-    
+
         *:nth-child(2) {
             grid-column: 7 / span 4 !important;
         }
@@ -126,16 +127,26 @@
                 display: flex;
                 justify-content: flex-end;
             }
+
             .wp-block-column:nth-child(2) {
                 display: flex;
                 justify-content: flex-start;
             }
         }
     }
+
+   .wp-site-blocks :has([class*="wp-block"]),
+    .wp-container-core-columns-layout-1 {
+        grid-template-columns: repeat(12, 1fr) !important;
+
+        > * {
+            grid-column: 3 / span 8 !important;
+        }
+    }
 }
 
 .site-footer {
-display: grid;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 10px;
@@ -153,7 +164,7 @@ display: grid;
     padding: 0;
 }
 
-.wp-block-column > * {
+.wp-block-column>* {
     width: 440px;
     padding: 0 8%;
     display: block !important;

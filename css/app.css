@@ -1051,7 +1051,7 @@ button.wpforms-submit {
     grid-template-rows: auto;
     grid-column-gap: 10px;
   }
-  .wpforms-container > *:first-child {
+  .wpforms-container>*:first-child {
     grid-column: 3 / span 8 !important;
   }
   .wpforms-container .wpforms-field-row.wpforms-field-medium,
@@ -1071,7 +1071,7 @@ button.wpforms-submit {
         .wp-container-core-columns-layout-1 {
       grid-template-columns: repeat(12, 1fr) !important;
     }
-    .wp-block-column > * {
+    .wp-block-column>* {
       width: 580px;
       padding: 0 8%;
       display: block !important;
@@ -1103,6 +1103,14 @@ button.wpforms-submit {
       }
     }
   }
+
+  .wp-site-blocks :has([class*="wp-block"]),
+    .wp-container-core-columns-layout-1 {
+    grid-template-columns: repeat(12, 1fr) !important;
+    > * {
+      grid-column: 3 / span 8 !important;
+    }
+  }
 }
 
 .site-footer {
@@ -1124,7 +1132,7 @@ button.wpforms-submit {
   padding: 0;
 }
 
-.wp-block-column > * {
+.wp-block-column>* {
   width: 440px;
   padding: 0 8%;
   display: block !important;
