@@ -540,6 +540,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
 }
 
+.justify-start {
+  justify-content: flex-start !important;
+}
+
 .bg-fuchsia-600 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(192 38 211 / var(--tw-bg-opacity)) !important;
@@ -657,6 +661,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-blur: blur(8px) !important;
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+}
+
+.transition-all {
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.duration-500 {
+  transition-duration: 500ms !important;
+}
+
+.duration-75 {
+  transition-duration: 75ms !important;
 }
 
 .has-primary-text-color {
@@ -862,10 +880,60 @@ div.wpforms-container-full button[type=submit] {
   font-size: 18px;
   line-height: 1.5;
   height: auto;
+  border: 0;
+  box-shadow: 0;
 }
 
 .wp-block-group div.wpforms-container-full {
   margin: 0;
+}
+
+/* Button Styles */
+
+.wp-element-button,
+a.wp-element-button {
+  background: #DB00FF;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta .wp-element-button::before {
+  content: '';
+  background-color: rgba(255, 255, 255, .15);
+  position: absolute;
+  top: -50px;
+  left: -120%;
+  width: 10%;
+  height: 300%;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, .10);
+  animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  to {
+    left: 120%;
+  }
+}
+
+/* Hover State Animation */
+
+@keyframes shine-stop {
+  to {
+    left: calc(50% - 5%);
+    /* Adjusting for the width of the shine effect */
+  }
+}
+
+.cta .wp-element-button:hover::before {
+  animation: shine-stop 0.5s ease forwards;
+  /* Change to use the shine-stop animation on hover */
+}
+
+.wp-block-buttons>.wp-block-button {
+  height: -moz-max-content !important;
+  height: max-content !important;
 }
 
 /* No WP Editor Bar */

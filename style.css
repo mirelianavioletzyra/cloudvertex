@@ -536,6 +536,9 @@ table {
 --------------------------------------------- */
 a {
 	color: #4169e1;
+	transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
 }
 
 a:visited {

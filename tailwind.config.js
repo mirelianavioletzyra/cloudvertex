@@ -11,6 +11,9 @@ module.exports = {
     ],
     safelist: [
         'text-gray-900',
+        'justify-start',
+        'transition-all',
+        'duration-75',
     ],
     important: true,
     theme: {

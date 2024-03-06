@@ -43,6 +43,7 @@
 body .is-layout-flex {
     justify-content: center;
 }
+
 .entry-content {
     margin: 0;
 }
@@ -68,8 +69,53 @@ div.wpforms-container-full button[type=submit] {
     font-size: 18px;
     line-height: 1.5;
     height: auto;
+    border: 0;
+    box-shadow: 0;
 }
 
 .wp-block-group div.wpforms-container-full {
     margin: 0;
+}
+
+/* Button Styles */
+.wp-element-button,
+a.wp-element-button {
+    background: #DB00FF;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta .wp-element-button::before {
+    content: '';
+    background-color: rgba(255, 255, 255, .15);
+    position: absolute;
+    top: -50px;
+    left: -120%;
+    width: 10%;
+    height: 300%;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, .10);
+    animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+    to {
+        left: 120%;
+    }
+}
+
+/* Hover State Animation */
+@keyframes shine-stop {
+    to {
+        left: calc(50% - 5%); /* Adjusting for the width of the shine effect */
+    }
+}
+
+.cta .wp-element-button:hover::before {
+    animation: shine-stop 0.5s ease forwards; /* Change to use the shine-stop animation on hover */
+}
+
+.wp-block-buttons>.wp-block-button {
+    height: max-content !important;
 }
