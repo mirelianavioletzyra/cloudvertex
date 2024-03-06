@@ -14,7 +14,9 @@ module.exports = {
         'justify-start',
         'transition-all',
         'duration-75',
-        'items-start'
+        'items-start',
+        'hidden',
+        'min-sm:block'
     ],
     important: true,
     theme: {
