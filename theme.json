@@ -1,9 +1,10 @@
 {
-    "version": 1,
-    "settings": {
-    },
-    "styles": {
-    },
-    "templateParts": [
-    ]
+	"version": 1,
+	"settings": {
+		"typography": {
+			"fontFamilies": []
+		}
+	},
+	"styles": [],
+	"templateParts": []
 }

@@ -1,3 +1,7 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
 .entry-content,
 .block-editor-block-list__layout {
     h1 {
@@ -70,9 +74,15 @@ div.wpforms-container-full button[type=submit] {
     height: auto;
     border: 0;
     box-shadow: none !important;
+    background-color: #DB00FF !important;
+    border-radius: 6px;
 }
 
 .wp-block-group div.wpforms-container-full {
+    margin: 0;
+}
+
+div.wpforms-container-full {
     margin: 0;
 }
 
