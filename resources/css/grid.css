@@ -118,3 +118,11 @@ display: grid;
     grid-template-rows: auto;
     grid-column-gap: 10px;
 }
+
+
+/* Other */
+.is-layout-flex.is-vertical {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}

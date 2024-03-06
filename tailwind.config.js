@@ -14,6 +14,7 @@ module.exports = {
         'justify-start',
         'transition-all',
         'duration-75',
+        'items-start'
     ],
     important: true,
     theme: {

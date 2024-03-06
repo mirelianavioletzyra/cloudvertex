@@ -540,6 +540,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
 }
 
+.items-start {
+  align-items: flex-start !important;
+}
+
 .justify-start {
   justify-content: flex-start !important;
 }
@@ -1077,6 +1081,14 @@ button.wpforms-submit {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 10px;
+}
+
+/* Other */
+
+.is-layout-flex.is-vertical {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 @media (min-width: 1024px) {
