@@ -128,6 +128,12 @@ button.wpforms-submit:hover::before {
     animation: shine-stop 0.5s ease forwards;
 }
 
+.cta .wp-element-button:hover,
+div.wpforms-container-full input[type=submit]:hover, div.wpforms-container-full input[type=submit]:active, div.wpforms-container-full button[type=submit]:hover, div.wpforms-container-full button[type=submit]:active, div.wpforms-container-full .wpforms-page-button:hover, div.wpforms-container-full .wpforms-page-button:active{
+    background-color: #DB00FF !important; 
+    background-image: none;
+}
+
 .wp-block-buttons>.wp-block-button,
 button.wpforms-submit {
     height: max-content !important;
