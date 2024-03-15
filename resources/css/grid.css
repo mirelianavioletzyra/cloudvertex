@@ -86,6 +86,10 @@
     }
 }
 
+.entry-content > * {
+    padding: 0 8%;
+}
+
 /* Larger than mobile */
 @media screen and (min-width: 600px) {
     .entry-content {
@@ -215,7 +219,5 @@
 }
 
 .wp-block-columns>.wp-block-column>div {
-    width: fit-content;
-    padding: 0 8%;
     display: block !important;
 }

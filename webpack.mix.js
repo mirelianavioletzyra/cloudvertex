@@ -19,11 +19,24 @@ mix.options({
     ]
 });
 
+
 mix.browserSync({
     proxy: 'http://your-website.test',
     host: 'your-website.test',
     open: 'external',
-    port: 8000
+    port: 8000,
+    files: [
+        'cloudvertex/**/*.php',
+        'blocks/lazyblock-services/block.php', 
+        'public/js/**/*.js', 
+        'public/css/**/*.css'
+    ]
 });
+
+const chokidar = require('chokidar');
+chokidar.watch('./blocks/lazyblock-services/block.php').on('all', (event, path) => {
+  console.log(event, path);
+});
+
 
 mix.version();

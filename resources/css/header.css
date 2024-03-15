@@ -15,7 +15,7 @@
 
 
 .admin-bar .site-header {
-    top: 46px;
+    top: 34px;
     z-index: 100;
 } 
 
@@ -30,3 +30,4 @@
         grid-row: 1 / span 1;
     }
 }
+ 

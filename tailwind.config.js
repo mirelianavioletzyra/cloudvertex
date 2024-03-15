@@ -7,6 +7,7 @@ module.exports = {
     content: [
         './*.php',
         './*/*.php',
+        './*/*/*.php',
         './safelist.txt'
     ],
     safelist: [

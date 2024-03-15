@@ -149,3 +149,13 @@ button.wpforms-submit {
     height: max-content !important;
     box-shadow: 0 !important;
 }
+
+.wp-block-media-text .wp-block-media-text__content {
+    padding: 0 !important;
+}
+
+
+li {
+    list-style-position: outside !important;
+    margin-left: 1.2rem;
+}

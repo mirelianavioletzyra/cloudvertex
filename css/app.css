@@ -532,6 +532,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem !important;
 }
 
+.block {
+  display: block !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
 .grid {
   display: grid !important;
 }
@@ -544,12 +552,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
 }
 
+.flex-col {
+  flex-direction: column !important;
+}
+
 .items-start {
   align-items: flex-start !important;
 }
 
 .justify-start {
   justify-content: flex-start !important;
+}
+
+.justify-center {
+  justify-content: center !important;
 }
 
 .bg-fuchsia-600 {
@@ -578,6 +594,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-20 {
   padding-top: 5rem !important;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .text-lg {
@@ -978,6 +998,15 @@ button.wpforms-submit {
   box-shadow: 0 !important;
 }
 
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 0 !important;
+}
+
+li {
+  list-style-position: outside !important;
+  margin-left: 1.2rem;
+}
+
 /* No WP Editor Bar */
 
 .site-header {
@@ -1002,7 +1031,7 @@ button.wpforms-submit {
 }
 
 .admin-bar .site-header {
-  top: 46px;
+  top: 34px;
   z-index: 100;
 }
 
@@ -1093,6 +1122,10 @@ button.wpforms-submit {
     width: 100%;
     max-width: 100% !important;
   }
+}
+
+.entry-content > * {
+  padding: 0 8%;
 }
 
 /* Larger than mobile */
@@ -1206,9 +1239,6 @@ button.wpforms-submit {
 }
 
 .wp-block-columns>.wp-block-column>div {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 8%;
   display: block !important;
 }
 
