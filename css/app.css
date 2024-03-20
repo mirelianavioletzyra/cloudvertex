@@ -1124,9 +1124,10 @@ li {
   }
 }
 
+/* 
 .entry-content > * {
-  padding: 0 8%;
-}
+    padding: 0 8%;
+} */
 
 /* Larger than mobile */
 

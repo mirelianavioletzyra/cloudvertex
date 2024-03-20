@@ -85,10 +85,10 @@
         max-width: 100% !important;
     }
 }
-
+/* 
 .entry-content > * {
     padding: 0 8%;
-}
+} */
 
 /* Larger than mobile */
 @media screen and (min-width: 600px) {
