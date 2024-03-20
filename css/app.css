@@ -1124,17 +1124,13 @@ li {
   }
 }
 
-/* 
-.entry-content > * {
-    padding: 0 8%;
-} */
-
 /* Larger than mobile */
 
 @media screen and (min-width: 600px) {
   .entry-content {
-    .wp-block-media-text.is-stacked-on-mobile,
-        .wp-container-core-columns-layout-1 {
+    .wp-block-media-text.is-stacked-on-mobile.grid-12-col,
+        .wp-container-core-columns-layout-1.grid-12-col,
+        .grid-12-col {
       grid-template-columns: repeat(12, 1fr) !important;
     }
     .hero {
