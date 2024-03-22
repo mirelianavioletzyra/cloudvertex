@@ -30,3 +30,6 @@ text-fuchsia-900
 text-pink-50 
 bg-fuchsia-600
 bg-[#db00ff]
+p-0
+gap-x-16
+mt-44

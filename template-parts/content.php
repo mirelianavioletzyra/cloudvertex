@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'mt-44 grid grid-cols-12' ); ?>>
+	<header class="entry-header col-span-8 col-start-3">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -29,9 +29,11 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	<div class="thumbnail col-span-8 col-start-3">
 	<?php tailwind_post_thumbnail(); ?>
+	</div>
 
-	<div class="entry-content">
+	<div class="entry-content col-span-8 col-start-3">
 		<?php
 		the_content(
 			sprintf(
@@ -57,7 +59,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer col-span-8 col-start-3">
 		<?php tailwind_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

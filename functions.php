@@ -240,3 +240,29 @@ function add_custom_class_to_body($classes) {
     return $classes;
 }
 add_filter('body_class', 'add_custom_class_to_body');
+
+/**
+ * Modify the comment form markup.
+ */
+function tailwind_modify_comment_form_markup() {
+    ob_start();
+    comment_form();
+    $comment_form = ob_get_clean();
+
+    $comment_form = str_replace(
+        '<div id="respond" class="comment-respond">',
+        '<div id="respond" class="comment-respond col-span-8 col-start-3">',
+        $comment_form
+    );
+
+    echo $comment_form;
+}
+
+// Modify the classes on the post navigation <nav> tag
+// function tailwind_post_navigation( $navigation ) {
+// 	$navigation = str_replace( '<nav class="navigation
+// 		post-navigation">', '<nav class="post-navigation grid grid-cols-12">', $navigation );
+// 	return $navigation;
+// }
+// add_filter( 'the_post_navigation', 'tailwind_post_navigation' );
+

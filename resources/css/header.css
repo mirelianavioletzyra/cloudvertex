@@ -26,7 +26,7 @@
         padding-top: 0.4rem;
     }
     .main-navigation {
-        grid-column: 3 / span 8;
+        grid-column: 2/span 10;
         grid-row: 1 / span 1;
     }
 }

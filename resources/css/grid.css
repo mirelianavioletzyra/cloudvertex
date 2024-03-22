@@ -9,11 +9,11 @@
 }
 
 .site-branding {
-    grid-column: 3 / span 4;
+    grid-column: 2 / span 4;
 }
 
 .main-navigation {
-    grid-column: 7 / span 4;
+    grid-column: 8 / span 4;
 
     ul {
         flex-direction: row;
@@ -84,19 +84,19 @@
 
 .entry-content>*:first-child,
 .entry-content>*:not(:first-child) {
-    grid-column: 1 / span 1 !important;
+    grid-column: 2/span 10 !important;
 }
 
 .entry-content>*:nth-child(2) {
-    grid-column: 1 / span 1 !important;
+    grid-column: 2/span 10 !important;
 }
 
 .entry-content>figure:first-child {
-    grid-column: 1 / span 1 !important;
+    grid-column: 2 / span 10 !important;
 }
 
 .entry-content>figure:last-child {
-    grid-column: 1 / span 1 !important;
+    grid-column: 2 / span 10 !important;
 }
 
 .entry-content>.wpforms-container {
