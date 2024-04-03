@@ -23,6 +23,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+<!-- 	14B66840-79D4-4D86-866D-030481B8D2A6 -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SHFKHJKB0T"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
