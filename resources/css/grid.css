@@ -31,15 +31,17 @@
     grid-row: 1 / span 1 !important;
 }
 
-.entry-content > .hero > figure:first-of-type {
+.entry-content > .hero > figure:first-child {
     grid-column: 3 / span 8 !important;
     grid-row: 1 / span 1 !important;
 }
 
-.entry-content > .hero > figure:last-of-type {
+.entry-content > .hero > figure:last-child {
     grid-column: 3 / span 8 !important;
     grid-row: 1 / span 1 !important;
 }
+
+
 
 @media screen and (min-width: 600px) {
     .page-template-default.page {
@@ -111,11 +113,11 @@
 
     .entry-content > .hero > .wp-block-media-text__content,
     .entry-content > .hero > .wp-block-media-text__media {
-        grid-column: 3 / span 4 !important;
+        grid-column: 1 / span 4 !important;
     }
 
     .entry-content > .hero > .wp-block-media-text__content {
-        grid-column: 3 / span 4 !important;
+        grid-column: 1 / span 4 !important;
     }
 
     .entry-content > .hero > .wp-block-media-text__media {
