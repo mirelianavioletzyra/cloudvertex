@@ -124,9 +124,14 @@
         grid-template-rows: auto !important;
 
         *:first-child,
-        *:not(:first-child) {
-            grid-column: 1 / span 6 !important;
-            grid-row: auto !important;
+        *:not(:first-child),
+        *:not(.wp-block-lazyblock-services),
+        *:not(.wp-block-lazyblock-services:first-child) {
+            grid-column: 3 / span 4 !important;
+        }
+
+        *:nth-child(2) {
+            grid-column: 7 / span 4 !important;
         }
 
         figure:first-child {
