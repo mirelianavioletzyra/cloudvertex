@@ -15,7 +15,7 @@
         <h3 class="text-xl"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
     <?php foreach ($attributes['service'] as $inner) : ?>
-        <div class="service col-span-4 md:col-span-3 text-center flex items-center justify-start flex-col">
+        <div class="service max-w-[7rem] md:max-w-[3.6rem] max-h-28 text-center flex items-center justify-start flex-col">
             <?php
             $icon_url = $inner['icon']['url'];
             $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
