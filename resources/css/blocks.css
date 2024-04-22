@@ -1,0 +1,11 @@
+.alignwide-unset {
+  margin-left: unset;
+  margin-right: unset;
+  margin-top: unset;
+  margin-bottom: unset;
+  max-width: inherit;
+}
+
+.service svg {
+  max-width: 100%;
+}
