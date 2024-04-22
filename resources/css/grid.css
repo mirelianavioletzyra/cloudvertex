@@ -135,7 +135,9 @@
         }
 
         *:first-child,
-        *:not(:first-child) {
+        *:not(:first-child),
+        *:not(.wp-block-lazyblock-services),
+        *:not(.wp-block-lazyblock-services:first-child) {
             grid-column: 3 / span 4 !important;
         }
 

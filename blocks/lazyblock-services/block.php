@@ -17,9 +17,11 @@
     </div>
 
     <?php foreach ($attributes['service'] as $inner) : ?>
-        <img src="<?php echo $inner['icon']['url']; ?>">
-        <p>
-            <?php echo $inner['service_name']; ?>
-        </p>
+        <div class="grid grid-cols-1 justify-center text-center services">
+            <img src="<?php echo $inner['icon']['url']; ?>">
+            <p class="text-xs md:text-md xl:text-lg">
+                <?php echo $inner['service_name']; ?>
+            </p>
+        </div>
     <?php endforeach; ?>
-</div> 
+</div>
