@@ -1499,7 +1499,7 @@ li.wp-block-post {
 }
 
 .rainbow-number-list {
-  /* .rainbow-number-list is a OL. I need a list of :nth() child selectors for the ::marker, each marker having a different color, and all having the font size 24px, the color list is #FF0099, #FF00F5, #BD00FF, #000AFF, #0085FF */
+  list-style-type: number;
   li::marker {
     font-size: 24px;
     font-weight: bold;
@@ -1528,7 +1528,8 @@ li.wp-block-post {
 
 .wpforms-field {
   input[type=email],
-    input[type=text] {
+    input[type=text],
+    input[type=phone] {
     border: 1px solid magenta !important;
     border-radius: 8px !important;
   }

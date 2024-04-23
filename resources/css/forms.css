@@ -1,7 +1,8 @@
 .wpforms-field {
 
     input[type=email],
-    input[type=text] {
+    input[type=text],
+    input[type=phone] {
         border: 1px solid magenta !important;
         border-radius: 8px !important;
     }
