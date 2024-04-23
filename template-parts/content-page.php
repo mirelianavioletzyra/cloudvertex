@@ -18,7 +18,7 @@
 
 	<?php tailwind_post_thumbnail(); ?>
 
-	<div class="entry-content grid grid-cols-12">
+	<div class="entry-content grid grid-cols-10">
 		<?php
 		the_content();
 

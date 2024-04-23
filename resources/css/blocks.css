@@ -9,3 +9,56 @@
 .service svg {
   max-width: 100%;
 }
+
+@media screen and (min-width: 600px) {
+
+  .entry-content>.hero>.wp-block-media-text__content,
+  .entry-content>.hero>.wp-block-media-text__media {
+    grid-column: 1/span 6 !important;
+  }
+}
+
+.contact-section {
+  gap:80px;
+}
+
+.pretty-text {
+    background-image: linear-gradient(to right, #FF00FF, #9E00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rainbow-number-list {
+  /* .rainbow-number-list is a OL. I need a list of :nth() child selectors for the ::marker, each marker having a different color, and all having the font size 24px, the color list is #FF0099, #FF00F5, #BD00FF, #000AFF, #0085FF */
+
+  li::marker {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  li:nth-child(1)::marker {
+
+    color: #FF0099;
+    counter-increment: rainbow-counter;
+  }
+
+  li:nth-child(2)::marker {
+    color: #FF00F5;
+    counter-increment: rainbow-counter;
+  }
+
+  li:nth-child(3)::marker {
+    color: #BD00FF;
+    counter-increment: rainbow-counter;
+  }
+
+  li:nth-child(4)::marker {
+    color: #000AFF;
+    counter-increment: rainbow-counter;
+  }
+
+  li:nth-child(5)::marker {
+    color: #0085FF;
+    counter-increment: rainbow-counter;
+  }
+}
