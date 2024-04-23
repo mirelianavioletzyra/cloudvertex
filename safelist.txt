@@ -33,3 +33,8 @@ bg-[#db00ff]
 p-0
 gap-x-16
 mt-44
+font-semibold
+mb-9
+text-5xl
+rounded-3xl	
+[&_input]:rounded-3xl	

@@ -151,7 +151,7 @@
     }
 
     .entry-content > * {
-        grid-column: 3 / span 8 !important;
+        grid-column: 2 / span 8 !important;
     }
 
     .entry-content > figure:first-of-type {

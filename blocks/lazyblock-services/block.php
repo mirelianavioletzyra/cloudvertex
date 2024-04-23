@@ -8,14 +8,15 @@
  * @var string $context Preview context [editor,frontend].
  */
 ?>
+
 <div class="services-block wp-container-core-columns-layout-1 flex justify-center flex-wrap md:my-24">
     <div class="flex flex-col justify-center text-center w-full">
         <h2 class="text-center text-3xl font-medium"><?php echo $attributes['title']; ?></h2>
 
-        <h3 class="text-xl"><?php echo $attributes['sub_heading']; ?></h3>
+        <h3 class="text-xl text-slate-600"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
     <?php foreach ($attributes['service'] as $inner) : ?>
-        <div class="service max-w-[7rem] md:max-w-[3.6rem] max-h-28 text-center flex items-center justify-start flex-col">
+        <div class="service max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col">
             <?php
             $icon_url = $inner['icon']['url'];
             $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
