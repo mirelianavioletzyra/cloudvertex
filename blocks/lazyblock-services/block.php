@@ -11,7 +11,7 @@
 
 <div class="services-block wp-container-core-columns-layout-1 flex justify-center flex-wrap md:my-24">
     <div class="flex flex-col justify-center text-center w-full">
-        <h2 class="text-center text-3xl font-medium"><?php echo $attributes['title']; ?></h2>
+        <h2 class="text-center text-4xl font-medium"><?php echo $attributes['title']; ?></h2>
 
         <h3 class="text-xl text-slate-600"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
