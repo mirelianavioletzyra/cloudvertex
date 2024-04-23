@@ -160,13 +160,6 @@ button.wpforms-submit {
     padding: 0 !important;
 }
 
-
-.list-outside li {
-    list-style-position: outside !important;
-    margin-left: 1.2rem;
-    list-style: decimal;
-}
-
 .block-editor-block-list__layout :not(.list-outside)
 ul
 li.list-none {
@@ -270,4 +263,10 @@ li.wp-block-post {
 /* Small */
 .service:hover #sparkle12 {
     animation: sparkle 4s ease infinite;
+}
+
+.list-outside li {
+    list-style-position: outside !important;
+    margin-left: 1.2rem;
+    list-style: decimal;
 }
