@@ -33,3 +33,13 @@ body .is-layout-flex {
     margin-bottom: unset !important;
     max-width: inherit !important;
 }
+
+.single-post .entry-content {
+    p {
+        margin-bottom: 1.5em;
+    }
+
+    .wp-block-heading.custom-h2-class {
+        @apply text-xl font-medium text-fuchsia-500;
+    }
+}

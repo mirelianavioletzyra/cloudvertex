@@ -26,7 +26,7 @@ $next_text = apply_filters( 'tailwind_next_post_text', esc_html__( 'Next Post', 
 // Display the navigation.
 if ( $prev_post || $next_post ) : ?>
 
-    <nav class="post-navigation col-span-8 col-start-3" aria-label="<?php esc_attr_e( 'Post Navigation', 'tailwind' ); ?>">
+    <nav class="post-navigation col-span-10 col-start-2 md:col-span-8 md:col-start-3 font-bold" aria-label="<?php esc_attr_e( 'Post Navigation', 'tailwind' ); ?>">
         <div class="nav-links">
             <?php
             if ( $prev_post ) : ?>

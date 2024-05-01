@@ -258,11 +258,3 @@ function tailwind_modify_comment_form_markup() {
     echo $comment_form;
 }
 
-// Modify the classes on the post navigation <nav> tag
-// function tailwind_post_navigation( $navigation ) {
-// 	$navigation = str_replace( '<nav class="navigation
-// 		post-navigation">', '<nav class="post-navigation grid grid-cols-12">', $navigation );
-// 	return $navigation;
-// }
-// add_filter( 'the_post_navigation', 'tailwind_post_navigation' );
-

@@ -1143,6 +1143,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 8 / span 8 !important;
 }
 
+.col-span-10{
+  grid-column: span 10 / span 10 !important;
+}
+
 .col-start-3{
   grid-column-start: 3 !important;
 }
@@ -1153,6 +1157,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .m-0{
   margin: 0px !important;
+}
+
+.my-4{
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mt-44{
@@ -1332,6 +1341,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 800 !important;
 }
 
+.font-bold{
+  font-weight: 700 !important;
+}
+
 .font-medium{
   font-weight: 500 !important;
 }
@@ -1378,6 +1391,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-700{
   --tw-text-opacity: 1 !important;
   color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
+}
+
+.text-fuchsia-500{
+  --tw-text-opacity: 1 !important;
+  color: rgb(217 70 239 / var(--tw-text-opacity)) !important;
 }
 
 .text-slate-600{
@@ -1562,9 +1580,33 @@ body .is-layout-flex {
   max-width: inherit !important;
 }
 
+.single-post .entry-content {
+  p {
+    margin-bottom: 1.5em;
+  }
+  .wp-block-heading.custom-h2-class{
+    font-size: 1.25rem;
+  }
+  .wp-block-heading.custom-h2-class{
+    font-weight: 500;
+  }
+  .wp-block-heading.custom-h2-class{
+    --tw-text-opacity: 1;
+    color: rgb(217 70 239 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 768px){
+  .md\:col-span-8{
+    grid-column: span 8 / span 8 !important;
+  }
+
   .md\:col-start-2{
     grid-column-start: 2 !important;
+  }
+
+  .md\:col-start-3{
+    grid-column-start: 3 !important;
   }
 
   .md\:my-24{
@@ -1576,6 +1618,14 @@ body .is-layout-flex {
     margin-bottom: 5rem !important;
   }
 
+  .md\:mt-44{
+    margin-top: 11rem !important;
+  }
+
+  .md\:mt-12{
+    margin-top: 3rem !important;
+  }
+
   .md\:max-h-fit{
     max-height: -moz-fit-content !important;
     max-height: fit-content !important;
@@ -1583,6 +1633,10 @@ body .is-layout-flex {
 
   .md\:max-w-\[6rem\]{
     max-width: 6rem !important;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem !important;
   }
 }
 
