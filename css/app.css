@@ -568,10 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px !important;
 }
 
-.mt-24 {
-  margin-top: 6rem !important;
-}
-
 .block {
   display: block !important;
 }
@@ -602,14 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[7rem\] {
   max-width: 7rem !important;
-}
-
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
-}
-
-.grid-cols-10 {
-  grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
 }
 
 .grid-cols-12 {
@@ -713,10 +701,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.6rem !important;
 }
 
-.text-2xl {
-  font-size: 1.5rem !important;
-}
-
 .font-light {
   font-weight: 300 !important;
 }
@@ -785,11 +769,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900 {
   --tw-text-opacity: 1 !important;
   color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
-}
-
-.text-magenta {
-  --tw-text-opacity: 1 !important;
-  color: rgb(219 0 255 / var(--tw-text-opacity)) !important;
 }
 
 .filter {
@@ -1553,10 +1532,6 @@ li.wp-block-post {
 }
 
 @media (min-width: 768px) {
-  .md\:col-start-3 {
-    grid-column-start: 3 !important;
-  }
-
   .md\:col-start-3 {
     grid-column-start: 3 !important;
   }
