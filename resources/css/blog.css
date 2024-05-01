@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .blog-posts-small {
+        @apply flex-wrap md:no-flex-wrap;
+    }
+}
+
+body .is-layout-flex {
+    flex-wrap: wrap !important;
+}
+
+@media (min-width: 768px) {
+    body .is-layout-flex {
+        flex-wrap: nowrap !important;
+    }
+}
+
+.wp-block-post-featured-image img {
+    box-sizing: border-box;
+    height: auto;
+    max-width: max-content !important;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.alignwide-unset {
+    margin-left: unset !important;
+    margin-right: unset !important;
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+    max-width: inherit !important;
+}
