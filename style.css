@@ -542,7 +542,7 @@ a {
 }
 
 a:visited {
-	color: #800080;
+	@apply text-cyan-500;
 }
 
 a:hover,

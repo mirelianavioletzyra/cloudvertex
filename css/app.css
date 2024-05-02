@@ -1196,6 +1196,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px !important;
 }
 
+.mt-44{
+  margin-top: 11rem !important;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem !important;
+}
+
 .block{
   display: block !important;
 }
@@ -1256,6 +1264,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center !important;
 }
 
+.gap-8{
+  gap: 2rem !important;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem !important;
        column-gap: 4rem !important;
@@ -1282,6 +1294,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-fuchsia-300\/20{
   background-color: rgb(240 171 252 / 0.2) !important;
+}
+
+.bg-fuchsia-600{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(192 38 211 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\#db00ff\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(219 0 255 / var(--tw-bg-opacity)) !important;
 }
 
 .p-0{
@@ -1329,6 +1351,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.6rem !important;
 }
 
+.text-lg{
+  font-size: 1.125rem !important;
+}
+
+.text-xl{
+  font-size: 1.25rem !important;
+}
+
+.text-2xl{
+  font-size: 1.5rem !important;
+}
+
+.text-3xl{
+  font-size: 1.875rem !important;
+}
+
+.text-4xl{
+  font-size: 2.25rem !important;
+}
+
+.text-5xl{
+  font-size: 3rem !important;
+}
+
 .font-light{
   font-weight: 300 !important;
 }
@@ -1347,6 +1393,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-medium{
   font-weight: 500 !important;
+}
+
+.font-light{
+  font-weight: 300 !important;
+}
+
+.font-semibold{
+  font-weight: 600 !important;
 }
 
 .leading-tight{
@@ -1406,6 +1460,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900{
   --tw-text-opacity: 1 !important;
   color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+}
+
+.text-gray-800{
+  --tw-text-opacity: 1 !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
+}
+
+.text-fuchsia-700{
+  --tw-text-opacity: 1 !important;
+  color: rgb(162 28 175 / var(--tw-text-opacity)) !important;
+}
+
+.text-fuchsia-900{
+  --tw-text-opacity: 1 !important;
+  color: rgb(112 26 117 / var(--tw-text-opacity)) !important;
+}
+
+.text-pink-50{
+  --tw-text-opacity: 1 !important;
+  color: rgb(253 242 248 / var(--tw-text-opacity)) !important;
 }
 
 .filter{
@@ -1596,7 +1670,47 @@ body .is-layout-flex {
   }
 }
 
+.wp-block-post-title{
+  font-size: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(217 70 239 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px){
+  .wp-block-post-title{
+    font-size: 1.875rem;
+  }
+}
+
+.wp-block-post-excerpt{
+  font-size: .875rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .wp-block-post-excerpt{
+    font-size: 100%;
+  }
+}
+
+.wp-block-post-date{
+  margin-top: 0.75rem;
+  font-size: .875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .wp-block-post-date{
+    font-size: 100%;
+  }
+
   .md\:col-span-8{
     grid-column: span 8 / span 8 !important;
   }

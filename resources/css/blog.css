@@ -43,3 +43,15 @@ body .is-layout-flex {
         @apply text-xl font-medium text-fuchsia-500;
     }
 }
+
+.wp-block-post-title {
+    @apply text-xl md:text-3xl font-normal text-fuchsia-500;
+}
+
+.wp-block-post-excerpt {
+    @apply text-sm md:text-base font-normal text-gray-500;
+}
+
+.wp-block-post-date {
+    @apply text-sm md:text-base text-gray-500 font-light tracking-widest uppercase mt-3;
+}

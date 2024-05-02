@@ -38,3 +38,4 @@ mb-9
 text-5xl
 rounded-3xl	
 [&_input]:rounded-3xl	
+gap-8

@@ -34,6 +34,12 @@
                             customClassName = 'text-sm font-medium text-fuchsia-500';
                             break;
                     }
+                    case 'core/query':
+                        switch (attributes.blockType) {
+                            case 'core/post-template':
+                                customClassName = 'custom-post-template-class';
+                                break;
+                        }
                     break;
                 case 'core/button':
                     customClassName = 'custom-button-class'; // Custom class for button
@@ -43,10 +49,6 @@
                     break;
                 case 'core/query-title':
                     customClassName = 'text-3xl font-medium text-fuchsia-500';
-                    break;
-                // How would I target a querry loop block and the items inside of it like the way the headings have variations?
-                case 'core/query-loop':
-                    customClassName = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
                     break;
                 default:
                     break;
