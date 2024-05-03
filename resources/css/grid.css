@@ -82,6 +82,10 @@
     grid-column: 2 / span 10 !important;
 }
 
+.home .entry-content > .wp-block-lazyblock-solutions {
+    grid-column: 1 / span 12 !important;
+}
+
 .entry-content > figure {
     grid-column: 2 / span 10 !important;
 }
@@ -152,6 +156,10 @@
 
     .home .entry-content > * {
         grid-column: 2 / span 10 !important;
+    }
+
+    .home .entry-content > .wp-block-lazyblock-solutions {
+        grid-column: 1 / span 12 !important;
     }
 
     .entry-content > figure:first-of-type {

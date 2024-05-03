@@ -160,9 +160,7 @@ button.wpforms-submit {
     padding: 0 !important;
 }
 
-.block-editor-block-list__layout :not(.list-outside)
-ul
-li.list-none {
+.block-editor-block-list__layout :not(.list-outside) ul li.list-none {
     list-style-type: none !important;
 }
 
@@ -184,84 +182,88 @@ li.wp-block-post {
 
 @keyframes sparkle {
     0% {
-      transform: scale(1) translate(0);
-      opacity: 0;
+        transform: scale(1) translate(0);
+        opacity: 0;
     }
+
     25% {
-      transform: scale(1) translate(0);
-      opacity: 1;
+        transform: scale(1) translate(0);
+        opacity: 1;
     }
+
     50% {
-      transform: scale(1) translate(0);
-      opacity: 0;
+        transform: scale(1) translate(0);
+        opacity: 0;
     }
+
     75% {
-      transform: scale(1) translate(0);
-      opacity: 1;
+        transform: scale(1) translate(0);
+        opacity: 1;
     }
+
     100% {
-      transform: scale(1) translate(0);
-      opacity: 0;
+        transform: scale(1) translate(0);
+        opacity: 0;
     }
-  }
+}
 
 /* Big */
-.service:hover #sparkle1 {
+.sparkle-container:hover #sparkle1 {
     animation: sparkle 1s ease infinite;
-} 
+}
 
 /* Medium */
-.service:hover #sparkle2 {
+.sparkle-container:hover #sparkle2 {
     animation: sparkle 4s ease infinite;
 }
 
 /* Small */
-.service:hover #sparkle3 {
+.sparkle-container:hover #sparkle3 {
     animation: sparkle 1s ease infinite;
 }
 
 /* Big */
-.service:hover #sparkle4 {
+.sparkle-container:hover #sparkle4 {
     animation: sparkle 2s ease infinite;
 }
 
 /* Medium */
-.service:hover #sparkle5 {
+.sparkle-container:hover #sparkle5 {
     animation: sparkle 3s ease infinite;
 }
 
 /* Small */
-.service:hover #sparkle6 {
+.sparkle-container:hover #sparkle6 {
     animation: sparkle 2s ease infinite;
 }
 
 /* Big */
-.service:hover #sparkle7 {
+.sparkle-container:hover #sparkle7 {
     animation: sparkle 3s ease infinite;
 }
 
 /* Medium */
-.service:hover #sparkle8 {
+.sparkle-container:hover #sparkle8 {
     animation: sparkle 2s ease infinite;
 }
 
 /* Small */
-.service:hover #sparkle9 {
+.sparkle-container:hover #sparkle9 {
     animation: sparkle 3s ease infinite;
 }
 
 /* Big */
-.service:hover #sparkle10 {
+.sparkle-container:hover #sparkle10 {
     animation: sparkle 4s ease infinite;
 }
 
 /* Medium */
-.service:hover #sparkle11 {
+.sparkle-container:hover #sparkle11 {
     animation: sparkle 1s ease infinite;
 }
 
 /* Small */
-.service:hover #sparkle12 {
+.sparkle-container:hover #sparkle12 {
     animation: sparkle 4s ease infinite;
 }
 

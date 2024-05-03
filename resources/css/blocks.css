@@ -62,3 +62,23 @@
     counter-increment: rainbow-counter;
   }
 }
+
+/* Gradient Options */
+.gradient-1 {
+  transition: all .2s ease-in-out !important;
+}
+
+.gradient-1:hover {
+  background: linear-gradient(137deg, #C0F 8.29%, #F400F9 53.84%, #FF00D6 91.56%), #FFF;
+
+  .text {
+    @apply text-white;
+  }
+} 
+
+.solution:hover {
+  svg path {
+    fill: white !important;
+  }
+}
+

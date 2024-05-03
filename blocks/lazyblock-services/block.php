@@ -15,7 +15,7 @@
         <h3 class="text-xl text-slate-600"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
     <?php foreach ($attributes['service'] as $inner) : ?>
-        <div class="service max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col">
+        <div class="service sparkle-container max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col">
             <?php
             $icon_url = $inner['icon']['url'];
             $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';

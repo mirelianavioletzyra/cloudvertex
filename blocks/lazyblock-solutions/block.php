@@ -8,35 +8,33 @@
  * @var string $context Preview context [editor,frontend].
  */
 ?>
-
-<div class="solutions-block wp-container-core-columns-layout-1 flex justify-center flex-wrap md:my-24 ">
-    <div class="flex flex-col justify-center text-center w-full">
-        <h2 class="text-center text-4xl font-medium">
-            <?php echo $attributes['title']; ?>
-        </h2>
-        <h3 class="text-xl text-slate-600">
-            <?php echo $attributes['sub_heading']; ?>test
-        </h3>
+<div class="solutions-block wp-container-core-columns-layout-1 flex justify-center flex-wrap my-24 py-44 text-white" style="background: linear-gradient(180deg, #FFF 0%, #FEEAFE 6.5%, #FDD0FE 12.5%, #FA8BFC 20%, #F400F9 31%, #D800FB 39%, #9E00FF 48.5%, #4778F1 59.5%, #1DA1EB 66%, #00D9E6 74%, #32EED9 80%, #95FFDF 88%, #D7FFF3 93.5%, #FFF 100%), #FFF;">
+    <div class="flex flex-col justify-center text-center w-full mb-16">
+        <h2 class="text-center text-4xl font-medium"><?php echo $attributes['title']; ?></h2>
+        <h3 class="text-xl"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
-    <?php foreach ($attributes['solution'] as $inner) : ?>
-        <div class="solution max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col">
-            <?php
-            echo $inner['gradient']; 
-
-            $icon_url = $inner['icon']['url'];
-            $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
-
-            if ($is_svg) {
-                echo '<div class="[&_svg]:w-12">';
-                echo file_get_contents($icon_url);
-                echo '</div>';
-            } else {
-                echo '<img src="' . $icon_url . '" class="w-36">';
-            }
-            ?>
-            <p class="text-[0.6rem] md:text-md xl:text-lg mb-0 relative -top-10">
-                <?php echo $inner['solution_name']; ?>
-            </p>
-        </div>
+    <div class="solutions">
+    <?php foreach ($attributes['solution'] as $inner) : 
+        $attributes = array_merge(array(
+            'gradient' => $inner['gradient']
+        ), $attributes);
+    ?>
+        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="solution-link group sparkle-container bg-white text-gray-600 solution block transition-all duration-200 ease-in-out rounded-2xl max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col <?php echo $attributes['gradient']; ?>">
+                <?php 
+                $icon_url = $inner['icon']['url'];
+                $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
+                if ($is_svg) {
+                    echo '<div class="[&_svg]:w-12 group-hover:[&_svg]:fill-white">';
+                    echo file_get_contents($icon_url);
+                    echo '</div>';
+                } else {
+                    echo '<img src="' . $icon_url . '" class="w-36">';
+                }
+                ?>
+                <p class="text text-[0.6rem] md:text-md xl:text-lg mb-0 relative -top-10">
+                    <?php echo $inner['solution_name']; ?>
+                </p>
+        </a>
     <?php endforeach; ?>
+</div>
 </div>

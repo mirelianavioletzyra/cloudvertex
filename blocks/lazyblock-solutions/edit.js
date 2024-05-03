@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { useBlockProps, InspectorControls, PanelBody, SelectControl } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -47,23 +47,23 @@ const Edit = (props) => {
     };
 
     // Update the solution attribute when the input field changes
-    const onChangesolutionHandler = (newsolution, index) => {
-        const updatedsolutions = [...attributes.solution];
-        updatedsolutions[index] = newsolution;
-        setAttributes({ solution: updatedsolutions });
+    const onChangeSolutionHandler = (newSolution, index) => {
+        const updatedSolutions = [...attributes.solution];
+        updatedSolutions[index] = newSolution;
+        setAttributes({ solution: updatedSolutions });
     };
 
     // Add a new solution item
-    const addsolutionHandler = () => {
-        const newsolution = { icon: { url: '' }, solution_name: '' };
-        setAttributes({ solution: [...attributes.solution, newsolution] });
+    const addSolutionHandler = () => {
+        const newSolution = { icon: { url: '' }, solution_name: '' };
+        setAttributes({ solution: [...attributes.solution, newSolution] });
     };
 
     // Remove a solution item
-    const removesolutionHandler = (index) => {
-        const updatedsolutions = [...attributes.solution];
-        updatedsolutions.splice(index, 1);
-        setAttributes({ solution: updatedsolutions });
+    const removeSolutionHandler = (index) => {
+        const updatedSolutions = [...attributes.solution];
+        updatedSolutions.splice(index, 1);
+        setAttributes({ solution: updatedSolutions });
     };
 
     // Update the gradientClass attribute when the select field changes
@@ -93,12 +93,12 @@ const Edit = (props) => {
                 <h2>{attributes.title}</h2>
                 <h3>{attributes.sub_heading}</h3>
                 {attributes.solution.map((solution, index) => (
-                    <div key={index} className="solution">
+                    <div key={index} className="solution bg-white rounded-lg">
                         <input
                             type="text"
                             value={solution.solution_name}
                             onChange={(event) =>
-                                onChangesolutionHandler(
+                                onChangeSolutionHandler(
                                     { ...solution, solution_name: event.target.value },
                                     index
                                 )
@@ -108,17 +108,17 @@ const Edit = (props) => {
                             type="text"
                             value={solution.icon.url}
                             onChange={(event) =>
-                                onChangesolutionHandler(
+                                onChangeSolutionHandler(
                                     { ...solution, icon: { url: event.target.value } },
                                     index
                                 )
                             }
                         />
-                        <button onClick={() => removesolutionHandler(index)}>Remove</button>
+                        <button onClick={() => removeSolutionHandler(index)}>Remove</button>
                     </div>
                 ))}
             </div>
-            <button onClick={addsolutionHandler}>Add solution</button>
+            <button onClick={addSolutionHandler}>Add Solution</button>
         </div>
     );
 };
