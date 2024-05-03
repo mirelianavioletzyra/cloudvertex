@@ -13,7 +13,7 @@
         <h2 class="text-center text-4xl font-medium"><?php echo $attributes['title']; ?></h2>
         <h3 class="text-xl"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
-    <div class="solutions">
+    <div class="solutions flex flex-row flex-wrap justify-center gap-8">
     <?php foreach ($attributes['solution'] as $inner) : 
         $attributes = array_merge(array(
             'gradient' => $inner['gradient']

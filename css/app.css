@@ -1239,6 +1239,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px !important;
 }
 
+.mb-16{
+  margin-bottom: 4rem !important;
+}
+
+.mb-0{
+  margin-bottom: 0px !important;
+}
+
 .block{
   display: block !important;
 }
@@ -1275,12 +1283,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 9rem !important;
 }
 
+.w-full{
+  width: 100% !important;
+}
+
+.w-36{
+  width: 9rem !important;
+}
+
 .max-w-\[7rem\]{
   max-width: 7rem !important;
 }
 
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+}
+
+.flex-row{
+  flex-direction: row !important;
 }
 
 .flex-col{
@@ -1410,6 +1430,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.6rem !important;
 }
 
+.text-4xl{
+  font-size: 2.25rem !important;
+}
+
+.text-xl{
+  font-size: 1.25rem !important;
+}
+
+.text-\[0\.6rem\]{
+  font-size: 0.6rem !important;
+}
+
 .font-light{
   font-weight: 300 !important;
 }
@@ -1492,6 +1524,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900{
   --tw-text-opacity: 1 !important;
   color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+}
+
+.text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1 !important;
+  color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
 }
 
 .text-white{
@@ -1784,6 +1826,15 @@ body .is-layout-flex {
     max-height: fit-content !important;
   }
 
+  .md\:max-h-fit{
+    max-height: -moz-fit-content !important;
+    max-height: fit-content !important;
+  }
+
+  .md\:max-w-\[6rem\]{
+    max-width: 6rem !important;
+  }
+
   .md\:max-w-\[6rem\]{
     max-width: 6rem !important;
   }
@@ -1806,12 +1857,20 @@ body .is-layout-flex {
     min-width: 12rem !important;
   }
 
+  .lg\:min-w-\[12rem\]{
+    min-width: 12rem !important;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem !important;
   }
 }
 
 @media (min-width: 1280px){
+  .xl\:text-lg{
+    font-size: 1.125rem !important;
+  }
+
   .xl\:text-lg{
     font-size: 1.125rem !important;
   }
