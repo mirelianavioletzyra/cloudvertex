@@ -19,12 +19,12 @@
             'gradient' => $inner['gradient']
         ), $attributes);
     ?>
-        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="solution-link group sparkle-container bg-white text-gray-600 solution block transition-all duration-200 ease-in-out rounded-2xl max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col <?php echo $attributes['gradient']; ?>">
+        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="solution-link group bg-white text-gray-600 solution block transition-all duration-200 ease-in-out rounded-2xl max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col <?php echo $attributes['gradient']; ?>">
                 <?php 
                 $icon_url = $inner['icon']['url'];
                 $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
                 if ($is_svg) {
-                    echo '<div class="[&_svg]:w-12 group-hover:[&_svg]:fill-white">';
+                    echo '<div class="[&_svg]:w-12 group-hover:[&_svg]:fill-white sparkle-container">';
                     echo file_get_contents($icon_url);
                     echo '</div>';
                 } else {
