@@ -1165,6 +1165,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -2.5rem !important;
 }
 
+.-top-5{
+  top: -1.25rem !important;
+}
+
 .col-span-8{
   grid-column: span 8 / span 8 !important;
 }
@@ -1231,6 +1235,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem !important;
 }
 
+.mb-0{
+  margin-bottom: 0px !important;
+}
+
 .block{
   display: block !important;
 }
@@ -1249,6 +1257,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-h-28{
   max-height: 7rem !important;
+}
+
+.w-full{
+  width: 100% !important;
+}
+
+.w-36{
+  width: 9rem !important;
 }
 
 .w-full{
@@ -1382,6 +1398,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.6rem !important;
 }
 
+.text-4xl{
+  font-size: 2.25rem !important;
+}
+
+.text-xl{
+  font-size: 1.25rem !important;
+}
+
+.text-\[0\.6rem\]{
+  font-size: 0.6rem !important;
+}
+
 .font-light{
   font-weight: 300 !important;
 }
@@ -1466,6 +1494,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
 }
 
+.text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1 !important;
+  color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
+}
+
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
@@ -1492,6 +1530,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-75{
   transition-duration: 75ms !important;
+}
+
+.duration-200{
+  transition-duration: 200ms !important;
 }
 
 .ease-in-out{
@@ -1737,6 +1779,15 @@ body .is-layout-flex {
     max-height: fit-content !important;
   }
 
+  .md\:max-h-fit{
+    max-height: -moz-fit-content !important;
+    max-height: fit-content !important;
+  }
+
+  .md\:max-w-\[6rem\]{
+    max-width: 6rem !important;
+  }
+
   .md\:max-w-\[6rem\]{
     max-width: 6rem !important;
   }
@@ -1751,12 +1802,20 @@ body .is-layout-flex {
     min-width: 12rem !important;
   }
 
+  .lg\:min-w-\[12rem\]{
+    min-width: 12rem !important;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem !important;
   }
 }
 
 @media (min-width: 1280px){
+  .xl\:text-lg{
+    font-size: 1.125rem !important;
+  }
+
   .xl\:text-lg{
     font-size: 1.125rem !important;
   }
