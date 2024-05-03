@@ -21,6 +21,8 @@ import { useBlockProps, InspectorControls, PanelBody, SelectControl } from '@wor
  */
 import './editor.scss';
 
+import { gradientLabels } from 'path/to/lazyblock/plugin/gradientLabels';
+
 /**
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
@@ -66,28 +68,24 @@ const Edit = (props) => {
         setAttributes({ solution: updatedSolutions });
     };
 
-    // Update the gradientClass attribute when the select field changes
-    const onChangeGradientClassHandler = (newGradientClass) => {
-        setAttributes({ gradientClass: newGradientClass });
-    };
+    const gradientOptions = Object.entries(gradientLabels).map(([value, label]) => ({
+        label: __(label, 'your-text-domain'),
+        value,
+    }));    
 
     return (
         <div {...useBlockProps()}>
             <InspectorControls>
-                {/* Add controls for title, sub_heading, and gradientClass here */}
-                <PanelBody title={__('Settings', 'your-text-domain')}>
-                    <SelectControl
-                        label={__('Gradient Class', 'your-text-domain')}
-                        value={attributes.gradientClass}
-                        options={[
-                            { label: __('Gradient 1', 'your-text-domain'), value: 'gradient-1' },
-                            { label: __('Gradient 2', 'your-text-domain'), value: 'gradient-2' },
-                            { label: __('Gradient 3', 'your-text-domain'), value: 'gradient-3' },
-                            // Add more gradient options as needed
-                        ]}
-                        onChange={onChangeGradientClassHandler}
-                    />
-                </PanelBody>
+            <InspectorControls>
+            <PanelBody title={__('Settings', 'your-text-domain')}>
+                <SelectControl
+                    label={__('Gradient', 'your-text-domain')}
+                    value={attributes.gradient}
+                    options={gradientOptions}
+                    onChange={onChangeGradientHandler}
+                />
+            </PanelBody>
+            </InspectorControls>
             </InspectorControls>
             <div className="solutions-block">
                 <h2>{attributes.title}</h2>

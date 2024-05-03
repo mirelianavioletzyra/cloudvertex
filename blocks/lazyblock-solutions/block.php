@@ -14,12 +14,14 @@
         <h3 class="text-xl"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
     <div class="solutions flex flex-row flex-wrap justify-center gap-8">
-    <?php foreach ($attributes['solution'] as $inner) : 
-        $attributes = array_merge(array(
-            'gradient' => $inner['gradient']
-        ), $attributes);
-    ?>
-        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="solution-link group bg-white text-gray-600 solution block transition-all duration-200 ease-in-out rounded-2xl max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col <?php echo $attributes['gradient']; ?>">
+    <?php 
+    
+    $attributes = array_merge(array(
+        'gradient' => ''
+    ), $attributes);
+
+    foreach ($attributes['solution'] as $inner) :  ?>
+        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="solution-link group bg-white text-gray-600 solution block transition-all duration-200 ease-in-out rounded-2xl max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col <?php echo $inner['gradient']; ?>">
                 <?php 
                 $icon_url = $inner['icon']['url'];
                 $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
