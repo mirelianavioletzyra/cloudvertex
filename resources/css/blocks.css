@@ -68,15 +68,19 @@
   transition: all .2s ease-in-out !important;
 }
 
-.gradient-1:hover {
+.gradient-1 {
   background: linear-gradient(137deg, #C0F 8.29%, #F400F9 53.84%, #FF00D6 91.56%), #FFF;
+
+  &:hover {
+    background-color: white;
+  }
 
   .text {
     @apply text-white;
   }
 } 
 
-.gradient-2:hover {
+.gradient-2 {
   background: linear-gradient(168deg, #FAFF00 -4.28%, #FFC700 20.52%, #FFA800 48.65%, #FFBD00 69.16%, #FFE500 91.1%);
 
   .text {
@@ -84,64 +88,74 @@
   }
 }
 
-.gradient-3:hover {
+.gradient-3 {
   background: linear-gradient(205deg, #00F 8.73%, #00FFE5 84.25%), #FFF;
+
+
   .text {
     @apply text-white;
   }
 }
 
-.gradient-4:hover {
+.gradient-4 {
   background: linear-gradient(161deg, #FF007A 19.44%, #FF002E 87.12%);
+
   .text {
     @apply text-white;
   }
 }
 
-.gradient-5:hover {
+.gradient-5 {
   background: linear-gradient(180deg, #00FFD1 0%, #00C2FF 100%), #FFF;
+
   .text {
     @apply text-white;
   }
 }
 
-.gradinet-6:hover {
+.gradinet-6 {
   background: linear-gradient(180deg, #00D9E6 0%, #00FFE5 100%);
+
   .text {
     @apply text-white;
   }
 }
 
-.gradient-7:hover {
+.gradient-7 {
   background: linear-gradient(180deg, #00F 7.38%, #6100FF 100%);
+
+
     .text {
     @apply text-white;
   }
 }
 
-.gradient-8:hover {
+.gradient-8 {
   background: linear-gradient(227deg, #9E00FF -13.24%, #F0F 81.5%), #FFF;
+
     .text {
     @apply text-white;
   }
 }
 
-.gradient-9:hover {
+.gradient-9 {
   background: linear-gradient(139deg, #F0F 5.71%, #FFB7FF 98.46%);
-      .text {
+
+  .text {
     @apply text-white;
   }
 }
 
-.gradient-10:hover {
+.gradient-10 {
   background: linear-gradient(117deg, #FFE500 4.78%, #FFA800 88.28%), #FFF;
-        .text {
+
+  .text {
     @apply text-white;
   }
 }
 
 
-.solution:hover {
+.solution {
   svg path {
     fill: white !important;
   }

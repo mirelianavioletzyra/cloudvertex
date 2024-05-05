@@ -33,7 +33,7 @@
                     echo '<img src="' . $icon_url . '" class="w-36">';
                 }
                 ?>
-                <p class="text text-[0.6rem] md:text-md xl:text-lg mb-0 relative -top-5">
+                <p class="text text-[0.6rem] md:text-md xl:text-[0.8rem] mb-0 relative -top-5">
                     <?php echo $inner['solution_name']; ?>
                 </p>
         </a>
