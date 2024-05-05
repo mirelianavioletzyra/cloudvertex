@@ -16,22 +16,22 @@
                     // Apply different classes based on heading level
                     switch (attributes.level) {
                         case 1:
-                            customClassName = 'text-3xl font-medium text-fuchsia-500';
+                            customClassName = 'text-2xl font-medium text-fuchsia-500 mb-4';
                             break;
                         case 2:
-                            customClassName = 'text-2xl font-medium text-fuchsia-500';
+                            customClassName = 'text-xl font-medium text-fuchsia-500 mb-2 mt-6';
                             break;
                         case 3:
-                            customClassName = 'text-xl font-medium text-fuchsia-500';
+                            customClassName = 'text-lg font-medium text-fuchsia-500';
                             break;
                         case 4:
-                            customClassName = 'text-lg font-medium text-fuchsia-500';
+                            customClassName = 'text-regular font-medium text-fuchsia-500';
                             break;
                         case 5:
                             customClassName = 'text-regular font-medium text-fuchsia-500';
                             break;
                         case 6:
-                            customClassName = 'text-sm font-medium text-fuchsia-500';
+                            customClassName = 'text-regular font-medium text-fuchsia-500';
                             break;
                     }
                     case 'core/query':

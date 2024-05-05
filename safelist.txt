@@ -39,3 +39,5 @@ text-5xl
 rounded-3xl	
 [&_input]:rounded-3xl	
 gap-8
+mb-2 
+mt-6

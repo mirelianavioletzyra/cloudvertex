@@ -272,3 +272,12 @@ li.wp-block-post {
     margin-left: 1.2rem;
     list-style: decimal;
 }
+
+ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+::marker {
+    @apply text-fuchsia-500 ml-4;
+}
