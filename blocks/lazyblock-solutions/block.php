@@ -26,14 +26,14 @@
                 $icon_url = $inner['icon']['url'];
                 $is_svg = pathinfo($icon_url, PATHINFO_EXTENSION) === 'svg';
                 if ($is_svg) {
-                    echo '<div class="[&_svg]:w-12 group-hover:[&_svg]:fill-white sparkle-container">';
+                    echo '<div class="-my-9 md:my-0 [&_svg]:w-4 md:[&_svg]:w-12 group-hover:[&_svg]:fill-white sparkle-container">';
                     echo file_get_contents($icon_url);
                     echo '</div>';
                 } else {
                     echo '<img src="' . $icon_url . '" class="w-36">';
                 }
                 ?>
-                <p class="text text-[0.6rem] md:text-md xl:text-[0.8rem] mb-0 relative -top-5">
+                <p class="text text-[0.6rem] md:text-md xl:text-[0.8rem] mb-0 relative -top-5 px-4">
                     <?php echo $inner['solution_name']; ?>
                 </p>
         </a>
