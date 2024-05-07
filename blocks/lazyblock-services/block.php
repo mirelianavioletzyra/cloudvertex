@@ -15,6 +15,7 @@
         <h3 class="text-xl text-slate-600"><?php echo $attributes['sub_heading']; ?></h3>
     </div>
     <?php foreach ($attributes['service'] as $inner) : ?>
+        <a href="<?php echo isset($inner['link']) ? esc_url($inner['link']) : '#'; ?>" class="services-link">
         <div class="service sparkle-container max-w-[7rem] md:max-w-[6rem] lg:min-w-[12rem] max-h-28 md:max-h-fit text-center flex items-center justify-start flex-col">
             <?php
             $icon_url = $inner['icon']['url'];
@@ -32,5 +33,6 @@
                 <?php echo $inner['service_name']; ?>
             </p>
         </div>
+        </a>
     <?php endforeach; ?>
 </div>
