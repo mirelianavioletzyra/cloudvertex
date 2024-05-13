@@ -82,10 +82,10 @@ li.wp-block-post {
 }
 
 .block-editor-block-list__layout,
-.wp-block-query { 
+.wp-block-query {
     ul li::marker {
-    display: none;
-}
+        display: none;
+    }
 }
 
 

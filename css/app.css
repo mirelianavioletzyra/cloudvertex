@@ -1545,16 +1545,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600 !important;
 }
 
-.font-extrabold{
-  font-weight: 800 !important;
+.font-medium{
+  font-weight: 500 !important;
 }
 
 .font-bold{
   font-weight: 700 !important;
-}
-
-.font-medium{
-  font-weight: 500 !important;
 }
 
 .leading-tight{
