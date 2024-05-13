@@ -41,3 +41,7 @@ rounded-3xl
 gap-8
 mb-2 
 mt-6
+mr-10
+md:mr-10
+-mb-10
+col-span-12

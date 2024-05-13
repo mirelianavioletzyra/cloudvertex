@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header grid grid-cols-12 mt-24">
-			<?php the_title( '<h1 class="entry-title text-magenta text-2xl mb-4 md:text-5xl col-span-8 col-start-2 md:col-start-2">', '</h1>' ); ?>
+			<?php the_title( '<h1 class="entry-title text-magenta font-medium text-2xl mb-4 md:text-5xl col-span-8 col-start-2 md:col-start-2">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 	<?php endif; ?>
 

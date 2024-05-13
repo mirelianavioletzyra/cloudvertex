@@ -13,9 +13,9 @@
 	<header class="entry-header col-span-10 col-start-2">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title text-xl md:text-3xl text-fuchsia-500 font-semibold mb-4">', '</h1>' );
+			the_title( '<h1 class="entry-title text-xl md:text-3xl text-fuchsia-500 font-medium mb-4">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title text-xl md:text-3xl text-fuchsia-500 font-semibold mb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title text-xl md:text-3xl text-fuchsia-500 font-medium mb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :

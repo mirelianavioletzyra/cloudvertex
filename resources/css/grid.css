@@ -56,8 +56,8 @@
 }
 
 /* Blocks */
-.entry-content > .wp-block-media-text,
-.entry-content > .wpforms-container {
+.home .entry-content > .wp-block-media-text,
+.home .entry-content > .wpforms-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr) !important;
     grid-template-rows: auto;
@@ -68,7 +68,7 @@
     padding: 0 8%;
 }
 
-.entry-content > .wp-block-media-text.is-stacked-on-mobile {
+.home .entry-content > .wp-block-media-text.is-stacked-on-mobile {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-rows: auto;

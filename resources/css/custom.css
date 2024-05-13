@@ -67,95 +67,6 @@ a {
     }
 }
 
-/* WP Forms Styles */
-div.wpforms-container-full button[type=submit] {
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
-    font-size: 18px;
-    line-height: 1.5;
-    height: auto;
-    border: 0;
-    box-shadow: none !important;
-    background-color: #DB00FF !important;
-    border-radius: 6px;
-}
-
-.wp-block-group div.wpforms-container-full {
-    margin: 0;
-}
-
-div.wpforms-container-full {
-    margin: 0;
-}
-
-/* Button Styles for WP Element Button and WPForms Submit */
-.wp-element-button,
-a.wp-element-button,
-button.wpforms-submit {
-    background: #DB00FF;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Shine Effect for WP Element Button */
-.cta .wp-element-button::before,
-/* Shine Effect for WPForms Submit Button */
-button.wpforms-submit::before {
-    content: '';
-    background-color: rgba(255, 255, 255, .15);
-    position: absolute;
-    top: -50px;
-    left: -120%;
-    width: 10%;
-    height: 300%;
-    transform: rotate(45deg);
-    box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, .10);
-    animation: shine 4s ease-in-out infinite;
-}
-
-.cta .wp-element-button::after,
-button.wpforms-submit::after {
-    content: '\2728';
-    display: inline-block;
-    margin-left: 0.2rem;
-}
-
-@keyframes shine {
-    to {
-        left: 120%;
-    }
-}
-
-/* Hover State Animation */
-@keyframes shine-stop {
-    to {
-        left: calc(50% - 5%);
-    }
-}
-
-/* Applying the hover effect to both WP Element Button and WPForms Submit */
-.cta .wp-element-button:hover::before,
-button.wpforms-submit:hover::before {
-    animation: shine-stop 0.5s ease forwards;
-}
-
-.cta .wp-element-button:hover,
-div.wpforms-container-full input[type=submit]:hover,
-div.wpforms-container-full input[type=submit]:active,
-div.wpforms-container-full button[type=submit]:hover,
-div.wpforms-container-full button[type=submit]:active,
-div.wpforms-container-full .wpforms-page-button:hover,
-div.wpforms-container-full .wpforms-page-button:active {
-    background-color: #DB00FF !important;
-    background-image: none;
-}
-
-.wp-block-buttons>.wp-block-button,
-button.wpforms-submit {
-    height: max-content !important;
-    box-shadow: 0 !important;
-}
-
 .wp-block-media-text .wp-block-media-text__content {
     padding: 0 !important;
 }
@@ -170,8 +81,11 @@ li.wp-block-post {
     }
 }
 
-.block-editor-block-list__layout ul li::marker {
+.block-editor-block-list__layout,
+.wp-block-query { 
+    ul li::marker {
     display: none;
+}
 }
 
 
@@ -273,9 +187,17 @@ li.wp-block-post {
     list-style: decimal;
 }
 
-ul li {
-    list-style-type: disc;
-    margin-left: 1rem;
+.entry-content ul {
+    margin-bottom: 1rem !important;
+
+    li {
+        list-style-type: disc;
+        margin-left: 1rem;
+    }
+}
+
+.wp-block-post-template li.wp-block-post {
+    list-style-type: none;
 }
 
 ::marker {
